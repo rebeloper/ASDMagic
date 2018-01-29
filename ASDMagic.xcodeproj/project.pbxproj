@@ -12,6 +12,7 @@
 		C984905E201F1E730083B70B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C984905C201F1E730083B70B /* Main.storyboard */; };
 		C9849060201F1E730083B70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C984905F201F1E730083B70B /* Assets.xcassets */; };
 		C9849063201F1E730083B70B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9849061201F1E730083B70B /* LaunchScreen.storyboard */; };
+		C984906C201F20D10083B70B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C984906B201F20D10083B70B /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C984905F201F1E730083B70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9849062201F1E730083B70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9849064201F1E730083B70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C984906B201F20D10083B70B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C984906C201F20D10083B70B /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				C9849057201F1E730083B70B /* ASDMagic */,
 				C9849056201F1E730083B70B /* Products */,
+				C984906A201F20D10083B70B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				C9849064201F1E730083B70B /* Info.plist */,
 			);
 			path = ASDMagic;
+			sourceTree = "<group>";
+		};
+		C984906A201F20D10083B70B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C984906B201F20D10083B70B /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +109,11 @@
 					C9849054201F1E730083B70B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
