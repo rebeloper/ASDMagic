@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47AFF9E16B757121B50481B5 /* Pods_ASDMagic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C8F979FDF08A91C41B1741 /* Pods_ASDMagic.framework */; };
 		C9849059201F1E730083B70B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9849058201F1E730083B70B /* AppDelegate.swift */; };
 		C984905B201F1E730083B70B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C984905A201F1E730083B70B /* ViewController.swift */; };
 		C9849060201F1E730083B70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C984905F201F1E730083B70B /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22E4182420687F985AC71586 /* Pods-ASDMagic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDMagic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDMagic/Pods-ASDMagic.debug.xcconfig"; sourceTree = "<group>"; };
+		67C8F979FDF08A91C41B1741 /* Pods_ASDMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASDMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9849055201F1E730083B70B /* ASDMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9849058201F1E730083B70B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C984905A201F1E730083B70B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C9849062201F1E730083B70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9849064201F1E730083B70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9E11C662028412800680855 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DCAEC84DDE2311074BE3A041 /* Pods-ASDMagic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDMagic.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDMagic/Pods-ASDMagic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E11C672028412800680855 /* StoreKit.framework in Frameworks */,
+				47AFF9E16B757121B50481B5 /* Pods_ASDMagic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 				C9849057201F1E730083B70B /* ASDMagic */,
 				C9849056201F1E730083B70B /* Products */,
 				C984906A201F20D10083B70B /* Frameworks */,
+				EDA5A496270118165FCB3259 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,8 +75,18 @@
 			isa = PBXGroup;
 			children = (
 				C9E11C662028412800680855 /* StoreKit.framework */,
+				67C8F979FDF08A91C41B1741 /* Pods_ASDMagic.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDA5A496270118165FCB3259 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22E4182420687F985AC71586 /* Pods-ASDMagic.debug.xcconfig */,
+				DCAEC84DDE2311074BE3A041 /* Pods-ASDMagic.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +96,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9849067201F1E730083B70B /* Build configuration list for PBXNativeTarget "ASDMagic" */;
 			buildPhases = (
+				60F8C5EFDB46F14683362417 /* [CP] Check Pods Manifest.lock */,
 				C9849051201F1E730083B70B /* Sources */,
 				C9849052201F1E730083B70B /* Frameworks */,
 				C9849053201F1E730083B70B /* Resources */,
+				19C70AF77E7FE9E1D7FD580E /* [CP] Embed Pods Frameworks */,
+				3FA28AB89806AB06DE9A9197 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +162,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19C70AF77E7FE9E1D7FD580E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ASDMagic/Pods-ASDMagic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LBTAComponents/LBTAComponents.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBTAComponents.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASDMagic/Pods-ASDMagic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FA28AB89806AB06DE9A9197 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASDMagic/Pods-ASDMagic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60F8C5EFDB46F14683362417 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ASDMagic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9849051201F1E730083B70B /* Sources */ = {
@@ -277,6 +350,7 @@
 		};
 		C9849068201F1E730083B70B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22E4182420687F985AC71586 /* Pods-ASDMagic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -294,6 +368,7 @@
 		};
 		C9849069201F1E730083B70B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCAEC84DDE2311074BE3A041 /* Pods-ASDMagic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
